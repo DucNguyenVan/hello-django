@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block page_content %}
+<div class="col-md-8 offset-md-2">
+    <h1>Tag Index</h1>
+    <hr>
+    {% for tag in tags %}
+    <h2><a href="{% url 'tag_detail' tag.pk %}">{{ tag.name }}</a></h2>
+    {% endfor %}
+</div>
+{% endblock %}
