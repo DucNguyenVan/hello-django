@@ -6,5 +6,6 @@
     {% for tag in tags %}
     <h2><a href="{% url 'tag_detail' tag.pk %}">{{ tag.name }}</a></h2>
     {% endfor %}
+    <h2><a href="{% url 'tag_create' %}"> Create Tag </a></h2>
 </div>
 {% endblock %}
